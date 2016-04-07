@@ -17,3 +17,9 @@ Generate SHA-1, SHA-256, SHA-512, and GPG detached signature file for a given fi
     => pkg/sprocket-redirect-1.0.0.gem.sha1
     => pkg/sprocket-redirect-1.0.0.gem.sha256
     => pkg/sprocket-redirect-1.0.0.gem.sha512
+
+# Installation
+
+On OS X, this can be easily installed through Homebrew:
+
+    brew install --HEAD https://raw.githubusercontent.com/sikachu/shasign/master/homebrew-formula/shasign.rb
