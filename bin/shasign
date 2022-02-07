@@ -3,8 +3,8 @@
 for file in $@; do
   if [ -f $file ];
   then
-    command gpg --armor --detach-sig --yes $file
-    echo "=> $file.asc"
+    command gpg --armor --detach-sig --yes -o "$file.sig" "$file"
+    echo "=> $file.sig"
 
     for algorithm in 1 256 512;
     do
