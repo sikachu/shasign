@@ -13,13 +13,14 @@ Generate SHA-1, SHA-256, SHA-512, and GPG detached signature file for a given fi
     user: "John Doe <jdoe@example.com>
     4096-bit RSA key, ID 1234ABCD, created 2016-04-07
 
-    => pkg/sprocket-redirect-1.0.0.gem.asc
+    => pkg/sprocket-redirect-1.0.0.gem.sig
     => pkg/sprocket-redirect-1.0.0.gem.sha1
     => pkg/sprocket-redirect-1.0.0.gem.sha256
     => pkg/sprocket-redirect-1.0.0.gem.sha512
 
 # Installation
 
-On OS X, this can be easily installed through Homebrew:
+On macOS, this can be easily installed through Homebrew:
 
-    brew install --HEAD https://raw.githubusercontent.com/sikachu/shasign/master/homebrew-formula/shasign.rb
+    curl -O https://raw.githubusercontent.com/sikachu/shasign/master/homebrew-formula/shasign.rb
+    brew install --HEAD shasign.rb
